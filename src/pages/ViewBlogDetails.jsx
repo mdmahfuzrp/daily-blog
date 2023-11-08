@@ -14,7 +14,7 @@ const ViewBlogDetails = () => {
   console.log(user);
 
   // Get WishlistCount
-  const { data: blogDetails = [], isLoading } = useQuery(
+  const { data: blogDetails = [] } = useQuery(
     ["my-wishlist"],
     async () => {
       const res = await fetch(
@@ -47,7 +47,7 @@ const ViewBlogDetails = () => {
         View Blog Details
       </h1>
 
-      {isLoading ? (
+      {blogDetails ? (
         <>
           <div>
             <img
