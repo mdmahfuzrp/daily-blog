@@ -1,0 +1,20 @@
+.globalLoader{
+    font-size: 25px;
+    color: #A27B5C;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: -5px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .globalLoader:after{
+    content: '';
+    height: 4px;
+    width:0%;
+    display: block;
+    background: #A27B5C;
+    border-radius: 10px;
+    animation: 1.6s lineGrow linear infinite;
+  }
+  
+  @keyframes lineGrow {to{width: 100%;}}

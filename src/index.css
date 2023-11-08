@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body, html{
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  scroll-behavior: smooth !important ;
+}
+
+.primaryBtn {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .2px;
+  color: white;
+  padding: 7px 15px;
+  background-color: #A27B5C;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px 0 #a27b5c5b;
+}
+
+
+.mouseLoader {
+  width: 23px;
+  height: 35px;
+  position: relative;
+}
+
+.mouseLoader::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50% , 50%);
+  width: 9px;
+  height: 9px;
+  background: #bcbaba;
+  border-radius: 50%;
+  animation: bounce 1s ease-in infinite alternate;
+}
+.mouseLoader::after {
+  content: '';
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 23px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 2px solid #c0c0c0;
+  border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+  animation: kick 1s ease-in infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    top: 5%;
+    opacity: 1;
+  }
+  100% {
+    top: 45%;
+    opacity: 0.7;
+  }
+}
+
+
+
