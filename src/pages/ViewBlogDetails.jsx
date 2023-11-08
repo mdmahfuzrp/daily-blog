@@ -14,7 +14,7 @@ const ViewBlogDetails = () => {
   console.log(user);
 
   // Get WishlistCount
-  const { data: blogDetails = [] } = useQuery(
+  const { data: blogDetails = {} } = useQuery(
     ["my-wishlist"],
     async () => {
       const res = await fetch(
@@ -27,6 +27,7 @@ const ViewBlogDetails = () => {
       refetchOnMount: true,
     }
   );
+  console.log(blogDetails);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
