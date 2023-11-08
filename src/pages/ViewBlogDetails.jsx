@@ -103,8 +103,8 @@ const ViewBlogDetails = () => {
             </div>
 
             <div className="mt-[30px] ">
-              <p className="text-secondBlack text-base font-medium flex items-center gap-2">
-                <span className="bg-primary text-white px-[6px] text-[15px] font-medium tracking-wide pb-[2px] rounded-[4px]">
+              <p className="text-secondBlack text-base font-medium flex items-start gap-2">
+                <span className="bg-primary text-white px-[6px] mt-[5px] text-[15px] font-medium tracking-wide pb-[2px] rounded-[4px]">
                   Summery:
                 </span>
                 {blogDetails?.shortDescription}
