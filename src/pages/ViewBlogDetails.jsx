@@ -121,7 +121,7 @@ const ViewBlogDetails = () => {
           </div>
         </>
       ) : (
-        <div className="w-full col-span-full h-[100px] flex items-center justify-center">
+        <div className="w-full col-span-full h-[300px] flex items-center justify-center">
           <MagnifyingGlass
             visible={true}
             height="55"
