@@ -51,7 +51,7 @@ const AllBlog = () => {
   console.log(totalBlogs);
 
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 5;
+  const itemsPerPage = 12;
   console.log(totalBlogs);
   const totalPages = Math.ceil((totalBlogs || 0) / itemsPerPage);
 
